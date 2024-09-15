@@ -1,0 +1,162 @@
+/* global.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  padding: 40px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+p {
+  color: grey;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons a {
+  color: grey;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.toggle-buttons .active {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.input-group {
+  width: 100%;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: grey;
+}
+
+.remember-forgot {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.remember-forgot a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.icon {
+  margin: 0 10px;
+  font-size: 2em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: #e4405f;
+}
+
+.pinterest {
+  color: #bd081c;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.fingerprint-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.fingerprint-icon .icon {
+  font-size: 3em;
+  color: #007bff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fingerprint-icon .icon:hover {
+  transform: scale(1.1);
+}

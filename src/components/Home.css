@@ -1,0 +1,145 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(145deg, #dff1ff, #e5d3ff, #ffd2e7, #ffeabf);
+    background-size: 400% 400%; /* For smoother transitions between colors */
+    animation: gradientShift 10s ease infinite; /* Smooth animated gradient */
+    height: 100%;
+}
+
+/* Animation for the gradient to slowly shift */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+.home-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.home-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-item {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.home-item:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for the dummy box */
+.home-item.dummy {
+    background-color: transparent; /* No content, just an empty space */
+    box-shadow: none; /* Remove the shadow for dummy boxes */
+    cursor: default; /* No interaction */
+}
+
+/* Specific styling for each item */
+.chat {
+    background-color: #FFD29D;
+    color: #db4b91;
+}
+
+.translate {
+    background-color: #ccf2ff;
+}
+
+.translate-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.faqs {
+    background-color: #e7d3ff;
+    color: #2b2366;
+}
+
+.about {
+    background-color: #ffd3ff;
+    color: #db4b91;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .home-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-item {
+        width: 90px;
+        height: 90px;
+        font-size: 1.2rem;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-subtitle {
+        font-size: 1rem;
+    }
+
+    .translate-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+    .home-item {
+        width: 180px;
+        height: 180px;
+        font-size: 1.8rem;
+    }
+
+    .translate-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
